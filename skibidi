@@ -197,7 +197,7 @@ const interval = setInterval(()=>{
 const now = new Date().getTime();
 const distance = targetDate - now;
 if(distance<0){
-countdownEl.textContent='Czołem! Wyniki są już dostępne!';
+countdownEl.textContent='Witamy! Wyniki są już dostępne!';
 clearInterval(interval);
 return;
 }
@@ -223,7 +223,7 @@ const closeAdmin = document.getElementById('closeAdmin');
 
 adminBtn.addEventListener('click', ()=>{
     const pw = prompt("Podaj hasło admina:");
-    if(pw !== "tajne123") return alert("Niepoprawne hasło!");
+    if(pw !== "DH2rSp2") return alert("Niepoprawne hasło!");
 
     if(Object.keys(votes).length===0){
         adminResultsDiv.innerHTML='<p>Brak głosów.</p>';
